@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="lorem_ipsum">Crossfade animations (also known as dissolve) gradually fade out one View or ViewGroup while simultaneously fading in another.
+        This animation is useful for situations where you want to switch content or views in your app.
+        The crossfade animation shown here uses ViewPropertyAnimator, which is available for Android 3.1 (API level 12) and higher.
+        Set up the crossfade animation
+        To set up the crossfade animation:
+            Create member variables for the views that you want to crossfade. You need these references later when modifying the views during the animation.
+            For the view that is being faded in, set its visibility to GONE. This prevents the view from taking up layout space and omits it from layout calculations, speeding up processing.
+            Cache the config_shortAnimTime system property in a member variable. This property defines a standard "short" duration for the animation. This duration is ideal for subtle animations or animations that occur very frequently. config_longAnimTime and config_mediumAnimTime are also available if you wish to use them.
+        Crossfade animations (also known as dissolve) gradually fade out one View or ViewGroup while simultaneously fading in another.
+        This animation is useful for situations where you want to switch content or views in your app.
+        The crossfade animation shown here uses ViewPropertyAnimator, which is available for Android 3.1 (API level 12) and higher.
+        Set up the crossfade animation
+        To set up the crossfade animation:
+            Create member variables for the views that you want to crossfade. You need these references later when modifying the views during the animation.
+            For the view that is being faded in, set its visibility to GONE. This prevents the view from taking up layout space and omits it from layout calculations, speeding up processing.
+            Cache the config_shortAnimTime system property in a member variable. This property defines a standard "short" duration for the animation. This duration is ideal for subtle animations or animations that occur very frequently. config_longAnimTime and config_mediumAnimTime are also available if you wish to use them.
+        Crossfade animations (also known as dissolve) gradually fade out one View or ViewGroup while simultaneously fading in another.
+        This animation is useful for situations where you want to switch content or views in your app.
+        The crossfade animation shown here uses ViewPropertyAnimator, which is available for Android 3.1 (API level 12) and higher.
+        Set up the crossfade animation
+        To set up the crossfade animation:
+            Create member variables for the views that you want to crossfade. You need these references later when modifying the views during the animation.
+            For the view that is being faded in, set its visibility to GONE. This prevents the view from taking up layout space and omits it from layout calculations, speeding up processing.
+            Cache the config_shortAnimTime system property in a member variable. This property defines a standard "short" duration for the animation. This duration is ideal for subtle animations or animations that occur very frequently. config_longAnimTime and config_mediumAnimTime are also available if you wish to use them.
+</string>
+    <string name="card_back_title">Card Back Title</string>
+    <string name="card_back_description">Card Back Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

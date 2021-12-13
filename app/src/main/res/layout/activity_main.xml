@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/activity_main_left_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left To Right"
+            app:layout_constraintBottom_toTopOf="@id/activity_main_state_list_animator_test_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_main_right_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right To Left"
+            app:layout_constraintBaseline_toBaselineOf="@id/activity_main_left_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/activity_main_state_list_animator_test_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="StateListAnimator Test"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/activity_main_cheese_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_left_text_view" />
+
+        <ImageView
+            android:id="@+id/activity_main_cheese_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/activity_main_crosse_fade_animation_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_circular_reveal_animation_button"
+            app:layout_constraintWidth_max="300dp" />
+
+        <Button
+            android:id="@+id/activity_main_crosse_fade_animation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Cross Fade Animation Test"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/activity_main_card_flip_animation_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_cheese_image_view" />
+
+        <Button
+            android:id="@+id/activity_main_card_flip_animation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Card Flip Animation Test"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/activity_main_circular_reveal_animation_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_crosse_fade_animation_button" />
+
+        <Button
+            android:id="@+id/activity_main_circular_reveal_animation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Circular Reveal Animation Test"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/activity_main_circular_reveal_animation_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_card_flip_animation_button" />
+
+        <Button
+            android:id="@+id/activity_main_curved_motion_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Curved Motion Animation Test"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_circular_reveal_animation_button" />
+
+        <Button
+            android:id="@+id/activity_main_zoom_animation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Zoom Animation Test"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_curved_motion_button" />
+
+        <Button
+            android:id="@+id/activity_main_spring_animation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Spring Animation Test"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_zoom_animation_button" />
+
+        <Button
+            android:id="@+id/activity_main_animation_using_scene_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Animation Using Scene Test"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_spring_animation_button" />
+
+
+        <Button
+            android:id="@+id/activity_main_screen_slide_pager_test_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@xml/animate_scale"
+            android:text="Screen Slide Pager Test"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_animation_using_scene_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
